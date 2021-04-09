@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: Century Gothic, sans-serif;
+  background: #e74c3c;
+  background-image: url(../image/back.png);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  color: #3b8d99;
+  font-size: 50px;
+  text-shadow: 3px 2px 7px #182848;
+  margin-bottom: 25px;
+}
+
+.editable {
+  max-width: 768px;
+  min-width: 560px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#select {
+  margin-bottom: 15px;
+  align-self: flex-end;
+  background: rgba(255, 255, 255, .25);
+  color: #182848;
+  border: 2px solid #3b8d99;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background .3s ease;
+}
+
+.editable__block {
+  margin-bottom: 25px;
+  width: 100%; 
+  padding: 15px;
+  line-height: 25px;
+  font-size: 16px;
+  color: black;
+  background: rgba(255, 255, 255, .25);
+  border: 3px solid #3b8d99;
+  border-radius: 7px;
+  transition: background .3s ease;
+}
+
+#select:hover,
+.editable__block:hover,
+.editable__block:focus {
+  background: rgba(255, 255, 255, .5);
+}
+
+.editalbe__btn-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.editable__btn {
+  min-width: 140px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #182848;
+  box-shadow: 3px 2px 7px #182848;
+  transition: background-color .3s ease;
+}
+
+.editable__btn:hover,
+.editable__btn:focus {
+  background-color: #3b8d99;
+}
+
+.editable__btn[disabled]:hover {
+  background-color: rgba(239, 239, 239, 0.3);
+  cursor: not-allowed;
+}
+
+.editable__btn.cancel-btn {
+  margin-left: 25px;
+}

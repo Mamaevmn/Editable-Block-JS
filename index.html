@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web API</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  
+  <div class="container">
+    <h1 class="title">Редактируемый блок</h1>
+    <div class="editable">
+      <select name="select" id="select" onchange="selectChanges(event)">
+        <!-- <option></option> -->
+      </select>
+      <div class="editable__block">
+        &#8212; Какие преимущества у C++<br>
+        &#8212; Не знаю...<br>
+        &#8212; Я тоже не знаю, но в его названии одни плюсы
+      </div>
+      
+      <button class="editable__btn edit-btn">Редактировать</button>
+  
+      <div class="editalbe__btn-block">
+        <button class="editable__btn save-btn" disabled>Сохранить</button>
+        <button class="editable__btn cancel-btn" disabled>Отменить</button>
+      </div>
+    </div>
+    
+  
+  </div>
+  
+</body>
+
+</html>
